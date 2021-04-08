@@ -4,4 +4,6 @@ class Calculator {
     fun add(x: Int, y: Int) = x + y
 
     fun multiply(x: Int, y: Int) = x * y
+
+    fun minus(x: Int, y: Int) = x - y
 }
