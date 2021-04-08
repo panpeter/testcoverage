@@ -32,6 +32,3 @@ jobs:
         run: ./gradlew app:jacocoTestReportDebug
 
       - uses: codecov/codecov-action@v1
-        with:
-          token: ${{ secrets.CODECOV }} # not required for public repos
-          files: ./app/build/reports/jacoco/jacoco.xml
