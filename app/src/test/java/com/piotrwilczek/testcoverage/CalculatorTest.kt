@@ -8,4 +8,9 @@ class CalculatorTest {
     fun addition() {
         assertEquals(4, Calculator().add(2, 2))
     }
+
+    @Test
+    fun minus() {
+        assertEquals(0, Calculator().minus(2, 2))
+    }
 }
