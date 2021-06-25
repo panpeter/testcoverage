@@ -1,0 +1,12 @@
+name: Release
+
+on:
+  pull_request_review:
+    types: [submitted]
+    branches: ['rel.**']
+
+jobs:
+  release:
+    if: github.event.review.state == 'approved'
+    steps:
+      - run: echo "Works!"
