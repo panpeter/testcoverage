@@ -2,10 +2,11 @@ name: Release
 
 on:
   pull_request:
-    branches: ['rel.**']
+    branches: ['main']
 
 jobs:
   approved:
+    if: startsWith(github.head_ref, "rel.")
     runs-on: ubuntu-20.04
     steps:
       - run: echo "Works!"
