@@ -1,15 +1,11 @@
 name: Release
 
 on:
-  push:
-    branches: [main]
-  pull_request_review:
-    types: [submitted]
+  pull_request:
     branches: ['rel.**']
 
 jobs:
   approved:
     runs-on: ubuntu-20.04
-    if: github.event.review.state == 'pending'
     steps:
       - run: echo "Works!"
