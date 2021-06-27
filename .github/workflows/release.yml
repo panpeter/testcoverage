@@ -6,7 +6,7 @@ on:
 
 jobs:
   approved:
-    if: startsWith(github.head_ref, "rel.")
+    if: startsWith(github.head_ref, 'rel.')
     runs-on: ubuntu-20.04
     steps:
       - run: echo "Works!"
