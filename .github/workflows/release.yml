@@ -13,10 +13,3 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - run: echo ${{ github.ref }}
-      - run: echo $GITHUB_REF
-
-  approved2:
-    if: startsWith(GITHUB_REF, 'refs/heads/rel.')
-    runs-on: ubuntu-20.04
-    steps:
-      - run: echo "Works!"
