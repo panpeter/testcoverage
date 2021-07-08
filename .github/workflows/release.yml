@@ -6,6 +6,7 @@ jobs:
   approved:
     runs-on: ubuntu-20.04
     steps:
+      - uses: actions/checkout@v2
       - run: git rev-parse --abbrev-ref HEAD
 
   approved1:
